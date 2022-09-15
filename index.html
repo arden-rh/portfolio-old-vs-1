@@ -4,18 +4,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
 
         <title>HTML Intro | FED22M</title>
 
     </head>
     <body>
-        <header>
+        <header class="header-class" id="header">
             <div class="logotype">Logotyp</div>
             <nav class="menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Portfolio</li>
-                    <li>About</li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -25,10 +26,17 @@
         <!-- En paragraf -->
         <p>Det här är en paragraf.</p>
 
-        <p>Länk till min GitHub: <a href="https://github.com/arden-rh">Arden R.H.</a>
+        <div id="contact">
+            <p>Länk till min GitHub: <a href="https://github.com/arden-rh">Arden R.H.</a>
+        </div>
         </p>
      </main>
-     <footer>
+     <footer id="footer">
+        <div>&copy; Arden Haldorson</div>
+        <div>
+            <a href="mailto:arden.haldorson@gmail.com">Get in contact with me!</a>
+
+        </div>
      </footer>
 
     </body>
