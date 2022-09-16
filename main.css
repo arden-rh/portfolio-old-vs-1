@@ -3,7 +3,23 @@ div {
 
 }
 
+h2 {
+    background-color: lightslategray;
+}
+
+.about {
+    background-color:lightgray;
+}
+
+.menu {
+    background-color:lightgray;
+}
+
 .name {
     color: orange;
     font-family:'Courier New', Courier, monospace;
+}
+
+.top-text {
+    font-size: 24px;
 }
