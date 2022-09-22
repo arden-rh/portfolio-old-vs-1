@@ -1,55 +1,54 @@
 body {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 
 div {
-    background-color:grey;
-
+  background-color: grey;
 }
 
 h2 {
-    background-color: lightslategray;
+  background-color: lightslategray;
 }
 
-nav li {
-    margin: 0;
-    font-size: 18px;
-    flex-grow: 1;
-    text-align: center;
-    padding: 1rem;
+.menu li {
+  margin: 0;
+  font-size: 18px;
+  flex-grow: 1;
+  text-align: center;
+  padding: 1rem;
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
 }
 
 .about {
-    background-color:lightgray;
+  background-color: lightgray;
 }
 
 .inner-header {
-    display: flex;
-    justify-content: space-between;    
+  display: flex;
+  justify-content: space-between;
 }
 
 .logotype {
-    display: flex;
+  display: flex;
 }
 
 .logotype img {
-    padding: 20px;
+  padding: 20px;
 }
 .menu {
-    display: flex;
-    background-color:lightgray;
+  display: flex;
+  background-color: lightgray;
 }
 
 .name {
-    color: orange;
-    font-family:'Courier New', Courier, monospace;
+  color: orange;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .top-text {
-    font-size: 24px;
+  font-size: 24px;
 }
