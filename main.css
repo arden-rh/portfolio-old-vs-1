@@ -11,10 +11,6 @@ h2 {
     background-color: lightslategray;
 }
 
-nav {
-    display: flex;
-}
-
 nav li {
     margin: 0;
     font-size: 18px;
@@ -41,7 +37,11 @@ nav ul {
     display: flex;
 }
 
+.logotype img {
+    padding: 20px;
+}
 .menu {
+    display: flex;
     background-color:lightgray;
 }
 
