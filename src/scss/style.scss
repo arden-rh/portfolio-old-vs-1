@@ -1,4 +1,17 @@
-body {
-    padding: 0;
+@import "config";
+@import "header";
+@import "hero";
+@import "footer";
+
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  background-color: $primary-color;
+}
+
+li {
+    list-style: none;
+}
