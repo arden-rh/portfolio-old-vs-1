@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 
 <head>
   <meta charset="utf-8" />
@@ -16,48 +16,59 @@
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <title>Arden R.H. Portfolio</title>
+  <meta property="og:title" content="Arden R.H. Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.arden.se/" />
+  <!-- <meta property="og:image" content="" /> !-->
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="header" id="header">
-      <div class="header-container">
+    <div class="navbar">
+      <div class="navbar-container">
         <h1 class="logotype">Arden R.H.</h1>
       </div>
       <nav>
         <button id="menu-btn">
-          <svg class="ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" height="25">
+          <svg id="ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" height="25">
             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
             <path
               d="M64 360c30.9 0 56 25.1 56 56s-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56zm0-160c30.9 0 56 25.1 56 56s-25.1 56-56 56s-56-25.1-56-56s25.1-56 56-56zM120 96c0 30.9-25.1 56-56 56S8 126.9 8 96S33.1 40 64 40s56 25.1 56 56z" />
           </svg>
         </button>
-        <ul class="menu-list">
-          <li>Home</li>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
           <li>About</li>
           <li>Projects</li>
           <li>Contact</li>
         </ul>
       </nav>
+    </div>
+    <header id="header">
+      <div class="header-box-decoration"></div>
+      <div class="header-text">
+        <span class="header-greeting">Hello there,</span>
+        <h2>My name is Arden and this is my <a href="#projects" id="portfolio">portfolio</a>.</h2>
+        <p>And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains,
+          far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
     </header>
     <main>
-      <section class="hero-container">
-        <div class="hero-box-decoration"></div>
-        <div class="hero-text">
-          <span class="hero-greeting">Hello there,</span>
-          <h2>My name is Arden and this is my <a href="#projects" id="portfolio">portfolio</a>.</h2>
-          <p>And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains,
-            far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-        </div>
-      </section>
       <section class="about">
-      
+        <div class="about-container">
+          <h2>About</h2>
+          <p>My name is Arden and I'm currently studyig Front End developement at Medieinstitutet in Malmö, Sweden.
+            I'm a happy, easy going guy that enjoys spending time drinking coffee with friends, playing Dungeons and Dragons and
+            taking care of my many green plants.</p>
+          <img src="">
+        </div>
+
       </section>
       <section class="portfolio">
-      
+
       </section>
       <section class="contact">
-      
+
       </section>
 
     </main>

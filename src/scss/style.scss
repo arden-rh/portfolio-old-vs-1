@@ -1,15 +1,18 @@
 @import "config";
+@import "navbar";
 @import "header";
-@import "hero";
+@import "about";
 @import "footer";
 
-* {
+body > * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   background-color: $primary-color;
+  font-family: $secondary-font;
+  color: white;
 }
 
 li {

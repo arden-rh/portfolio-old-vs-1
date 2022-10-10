@@ -1,0 +1,95 @@
+.navbar {
+  background-color: transparent;
+  width: 90%;
+  height: 40px;
+  padding: 2% 5%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.logotype {
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+}
+
+#menu-btn {
+  background-color: transparent;
+  border: 0;
+  width: 30px;
+}
+
+#ellipsis {
+  fill: white;
+}
+
+.menu {
+  li {
+    padding: 0 1.8em;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+  }
+
+  li:hover {
+    color: $secondary-color;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  button + .menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  button.menu-open + .menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  button.menu-open + .menu li {
+    padding: 0.4em;
+    font-size: 0.8em;
+    list-style: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #menu-btn {
+    display: none;
+  }
+
+  nav {
+    font-family: $secondary-font;
+    color: aquamarine;
+    position: fixed;
+    right: 20px;
+    left: auto;
+    top: 30%;
+    flex-direction: column;
+    z-index: 10;
+    width: 40px;
+    margin: 0;
+
+    ul {
+      writing-mode: vertical-lr;
+      display: flex;
+
+      li {
+        padding: 1rem 0;
+      }
+    }
+  }
+}
