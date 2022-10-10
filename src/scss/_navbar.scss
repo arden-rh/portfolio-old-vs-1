@@ -1,5 +1,5 @@
 .navbar {
-  background-color: transparent;
+  background-color: $primary-color;
   width: 90%;
   height: 40px;
   padding: 2% 5%;
@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 2px dotted $secondary-color;
 }
 
 .navbar-container {
@@ -30,9 +31,14 @@ nav {
   width: 30px;
 }
 
+#menu-btn:hover > #ellipsis {
+  fill: $secondary-color;
+}
+
 #ellipsis {
   fill: white;
 }
+
 
 .menu {
   li {
@@ -57,12 +63,12 @@ nav {
     display: block;
     opacity: 1;
     visibility: visible;
-  }
 
-  button.menu-open + .menu li {
-    padding: 0.4em;
-    font-size: 0.8em;
-    list-style: none;
+    li {
+      padding: 0.4em;
+      font-size: 0.8em;
+      list-style: none;
+    }
   }
 }
 
