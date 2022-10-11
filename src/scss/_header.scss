@@ -1,67 +1,69 @@
 header {
-    background-color: $primary-color;
-    width: 90%;
-    height: 70vh;
-    padding: 0 5%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    z-index: -1;
-  }
-  
-  .header-text {
-    width: 100%;
-    padding: 40% 0 10%;
-    background-color: $primary-color;
-  }
-  
-  .header-greeting {
-    font-family: $secondary-font;
-    color: $secondary-color;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-  }
-  
-  h2 {
-    font-family: $primary-font;
-    color: $secondary-color;
-    letter-spacing: 0.2rem;
-    font-weight: 400;
-    margin: 0.4rem 0 0 0;
-  }
-  
-  #portfolio {
-    color: white;
-  }
-  
-  @media only screen and (min-width: 1024px) {
+  background-color: $primary-color;
+  width: 90%;
+  height: 70vh;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
 
-    .header-text {
-      width: 40%;
-      border: 2px solid $secondary-color;
-      margin: 16% 40% auto 0;
-      padding: 3rem 2rem;
-      z-index: 1;
-  
-      p {
-          padding: 2rem;
-      }
-    }
-  
-    .header-box-decoration {
-      width: 40%;
-      height: 71%;
-      max-height: 350px;
-      border-top: 3px dotted $secondary-color;
-      border-right: 3px dotted $secondary-color;
-      border: 3px dotted $secondary-color;
-      margin: 12% 29% 10% 0;
-      position: absolute;
+.header-text {
+  width: 100%;
+  padding: 40% 0 10%;
+  background-color: $primary-color;
+  position: relative;
+  display: block;
+}
+
+.header-greeting {
+  font-family: $secondary-font;
+  color: $secondary-color;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: $primary-font;
+  color: $secondary-color;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  margin: 0.4rem 0 0 0;
+}
+
+#portfolio {
+  color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header-text {
+    width: 40%;
+    border: 2px solid $secondary-color;
+    margin: 18% 30% auto 0;
+    padding: 3rem 2rem;
+    background-color: $primary-color;
+    position: relative;
+
+    p {
+      padding: 2rem;
     }
   }
-  
+
+  .header-text::after {
+    border: 3px dotted $secondary-color;
+    top: -32px;
+    left: 25px;
+    z-index: -1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+  }
+}

@@ -17,10 +17,24 @@
     }
   
     .contact-container {
-        margin: 5% 8%;
+        margin: 8% 9% 10% 7%;
         padding: 10% 5%;
         background-color: $tertiary-color;
         width: 84%;
         border: 3px dotted $secondary-color;
+        position: relative;
     }
+
+    .contact-container::after {
+        background-color: $primary-color;
+        border: 3px dotted $secondary-color;
+        top: -35px;
+        left: 30px;
+        z-index: -1;
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        content: "";
+      }
   }

@@ -4,23 +4,87 @@
   background-color: $primary-color;
 }
 
-.projects-container {
+.projects-header {
   padding: 10% 5%;
-  display: grid;
+  display: flex;
 }
 
 @media only screen and (min-width: 1024px) {
   .projects {
-      display: flex;
-      justify-content: center;
-      background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $primary-color;
+  }
+
+  .projects-header {
+    width: 20%;
+    border: 2px solid $secondary-color;
+    margin: 8% 50% auto 0;
+    padding: 2rem 0 2rem 2rem;
+    background-color: $primary-color;
+    position: relative;
+
+    p {
+      padding: 2rem;
+    }
+  }
+
+  .projects-header::after {
+    border: 3px dotted $secondary-color;
+    top: -32px;
+    left: 25px;
+    z-index: -1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
   }
 
   .projects-container {
-      margin: 5% 8% 0;
-      padding: 10% 5%;
-      background-color: $primary-color;
-      width: 84%;
-      border: 3px dotted $secondary-color;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    border: 2px solid $secondary-color;
+    background-color: $primary-color;
+    grid-template: 1.5fr 1fr / 15fr 1fr 15fr 1fr 15fr;
+    gap: 5% 0;
+    width: 84%;
+    height: 70vh;
+    margin: 8% 9% 10% 7%;
+
+    div {
+      background-color: $tertiary-color;
+    }
+
+    div:nth-child(1) {
+      grid-column: 1 / 7;
+    }
+
+    div:nth-child(2) {
+      grid-column: 1;
+    }
+
+    div:nth-child(3) {
+      grid-column: 3;
+    }
+
+    div:nth-child(4) {
+      grid-column: 5;
+    }
+    
+  }
+
+  .projects-container::after {
+    border: 3px dotted $secondary-color;
+    top: -32px;
+    left: 25px;
+    z-index: -1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
   }
 }

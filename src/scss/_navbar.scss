@@ -23,6 +23,7 @@
 
 nav {
   display: flex;
+  justify-content: end;
 }
 
 #menu-button {
@@ -40,14 +41,23 @@ nav {
 }
 
 .menu {
+
+  ul {
+    padding: 0;
+  }
+
   li {
-    padding: 0 1.8em;
+    padding: 0 1em;
     font-size: 0.7em;
     letter-spacing: 0.05em;
   }
 
   li:hover {
     color: $secondary-color;
+  }
+
+  a {
+    color: white;
   }
 }
 
@@ -56,7 +66,7 @@ nav {
   border-radius: 100%;
   width: 40px;
   height: 40px;
-  border: 2px solid $secondary-color;
+  border: 2px dotted $secondary-color;
   position: fixed;
   bottom: 4%;
   right: 5%;
@@ -135,6 +145,6 @@ nav {
   }
 
   .top-button {
-    right: 2%;
+    right: 1.2%;
   }
 }
