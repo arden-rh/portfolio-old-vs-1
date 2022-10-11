@@ -1,0 +1,26 @@
+.projects {
+  z-index: 1;
+  position: relative;
+  background-color: $primary-color;
+}
+
+.projects-container {
+  padding: 10% 5% 10% 5%;
+  display: grid;
+}
+
+@media only screen and (min-width: 1024px) {
+  .projects {
+      display: flex;
+      justify-content: center;
+      background-color: $primary-color;
+  }
+
+  .projects-container {
+      margin: 5% 8% 0;
+      padding: 10% 5%;
+      background-color: $primary-color;
+      width: 84%;
+      border: 2px dotted $secondary-color;
+  }
+}

@@ -6,6 +6,22 @@
 }
 
 .about-container {
-    padding: 10% 5% 10% 5%;
+    padding: 10% 5%;
+}
 
+@media only screen and (min-width: 1024px) {
+    .about {
+        margin-top: 100vh;
+        display: flex;
+        justify-content: center;
+        background-color: $primary-color;
+    }
+
+    .about-container {
+        margin: 0 8%;
+        padding: 10% 5%;
+        background-color: $tertiary-color;
+        width: 84%;
+        border: 2px dotted $secondary-color;
+    }
 }

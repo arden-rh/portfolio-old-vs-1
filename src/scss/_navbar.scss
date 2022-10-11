@@ -1,8 +1,8 @@
 .navbar {
   background-color: $primary-color;
-  width: 90%;
+  width: 93%;
   height: 40px;
-  padding: 2% 5%;
+  padding: 2% 2% 2% 5%;
   position: fixed;
   top: 0;
   z-index: 5;
@@ -25,20 +25,19 @@ nav {
   display: flex;
 }
 
-#menu-btn {
+#menu-button {
   background-color: transparent;
   border: 0;
   width: 30px;
 }
 
-#menu-btn:hover > #ellipsis {
+#menu-button:hover > #ellipsis {
   fill: $secondary-color;
 }
 
 #ellipsis {
   fill: white;
 }
-
 
 .menu {
   li {
@@ -52,6 +51,30 @@ nav {
   }
 }
 
+.top-button {
+  background-color: transparent;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $secondary-color;
+  position: fixed;
+  bottom: 4%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  opacity: 0.4;
+}
+
+.top-button:hover {
+  opacity: 1;
+}
+
+#top-arrow {
+  fill: $secondary-color;
+}
+
 @media only screen and (max-width: 1024px) {
   button + .menu {
     display: none;
@@ -60,20 +83,32 @@ nav {
   }
 
   button.menu-open + .menu {
-    display: block;
+    display: flex;
     opacity: 1;
     visibility: visible;
+    padding: 0;
 
     li {
-      padding: 0.4em;
-      font-size: 0.8em;
-      list-style: none;
+      padding: 0.5rem;
+      font-size: 0.8rem;
     }
+  }
+
+  button.menu-open > #ellipsis {
+    fill: none;
+    stroke: $secondary-color;
+    stroke-width: 10px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  #menu-btn {
+  .navbar {
+    background-color: transparent;
+    border-bottom: 0;
+    position: relative;
+  }
+
+  #menu-button {
     display: none;
   }
 
@@ -97,5 +132,9 @@ nav {
         padding: 1rem 0;
       }
     }
+  }
+
+  .top-button {
+    right: 2%;
   }
 }

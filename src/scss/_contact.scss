@@ -8,3 +8,19 @@
   padding: 10% 5% 10% 5%;
   display: grid;
 }
+
+@media only screen and (min-width: 1024px) {
+    .contact {
+        display: flex;
+        justify-content: center;
+        background-color: $primary-color;
+    }
+  
+    .contact-container {
+        margin: 5% 8%;
+        padding: 10% 5%;
+        background-color: $tertiary-color;
+        width: 84%;
+        border: 2px dotted $secondary-color;
+    }
+  }

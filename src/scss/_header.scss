@@ -36,20 +36,17 @@ header {
   }
   
   #portfolio {
-    color: blue;
+    color: white;
   }
   
   @media only screen and (min-width: 1024px) {
+
     .header-text {
       width: 40%;
       border: 2px solid $secondary-color;
-      margin: 10% 40% auto 0;
+      margin: 16% 40% auto 0;
       padding: 3rem 2rem;
       z-index: 1;
-  
-      a {
-          text-decoration: none;
-      }
   
       p {
           padding: 2rem;
@@ -58,12 +55,12 @@ header {
   
     .header-box-decoration {
       width: 40%;
-      height: 65%;
+      height: 71%;
       max-height: 350px;
       border-top: 3px dotted $secondary-color;
       border-right: 3px dotted $secondary-color;
       border: 3px dotted $secondary-color;
-      margin: 8% 35% 10% 0;
+      margin: 12% 29% 10% 0;
       position: absolute;
     }
   }

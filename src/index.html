@@ -24,12 +24,13 @@
 
 <body>
   <div class="wrapper">
+    <div id="top"></div>
     <div class="navbar">
       <div class="navbar-container">
-        <h1 class="logotype">Arden R.H.</h1>
+        <h1 class="logotype"><a href="#top">Arden R.H.</a></h1>
       </div>
-      <!-- <nav> -->
-        <button id="menu-btn">
+      <nav>
+        <button id="menu-button">
           <svg id="ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" height="25">
             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
             <path
@@ -37,19 +38,26 @@
           </svg>
         </button>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      <!-- </nav> -->
+      </nav>
+      <a class="top-button" href="#top">
+        <svg id="top-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" height="20">
+          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
+        </svg>
+      </a>
     </div>
     <header id="header">
       <div class="header-box-decoration"></div>
       <div class="header-text">
         <span class="header-greeting">Hello there,</span>
-        <h2>My name is Arden and this is my <a href="#projects" id="portfolio">portfolio</a>.</h2>
-        <p>And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains,
+        <h2>My name is Arden and this is my <span id="portfolio">portfolio</span>.</h2>
+        <p>And if she hasn't been rewritten, then they are still using her. Far far away, behind the word mountains,
           far from the countries Vokalia and Consonantia, there live the blind texts.</p>
       </div>
     </header>
@@ -58,17 +66,19 @@
         <div class="about-container">
           <h2>About</h2>
           <p>My name is Arden and I'm currently studyig Front End developement at Medieinstitutet in Malmö, Sweden.
-            I'm a happy, easy going guy that enjoys spending time drinking coffee with friends, playing Dungeons and Dragons and
+            I'm a happy, easy going guy that enjoys spending time drinking coffee with friends, playing Dungeons and
+            Dragons and
             taking care of my many green plants.</p>
           <img src="">
         </div>
 
       </section>
-      <section class="portfolio" id="portfolio">
-        <div class="portfolio-container">
-          <h2>Portfolio</h2>
+      <section class="projects" id="projects">
+        <div class="projects-container">
+          <h2>Projects</h2>
           <p>My name is Arden and I'm currently studyig Front End developement at Medieinstitutet in Malmö, Sweden.
-            I'm a happy, easy going guy that enjoys spending time drinking coffee with friends, playing Dungeons and Dragons
+            I'm a happy, easy going guy that enjoys spending time drinking coffee with friends, playing Dungeons and
+            Dragons
             and
             taking care of my many green plants.</p>
         </div>
@@ -78,7 +88,8 @@
         <div class="contact-container">
           <h2>Contact</h2>
           <p>My name is Arden and I'm currently studyig Front End developement at Medieinstitutet in Malmö, Sweden.
-            I'm a happy, easy going guy that enjoys spending time drinking coffee with friends, playing Dungeons and Dragons
+            I'm a happy, easy going guy that enjoys spending time drinking coffee with friends, playing Dungeons and
+            Dragons
             and
             taking care of my many green plants.</p>
         </div>
@@ -90,6 +101,13 @@
       <div>&copy; Arden Haldorson</div>
     </footer>
   </div>
+  <!-- Scripts -->
+  <script>
+    const menuBtn = document.querySelector("#menu-button");
+    Btn.addEventListener("click", () => {
+      n.classList.toggle("menu-open");
+    });
+  </script>
 </body>
 
 </html>
