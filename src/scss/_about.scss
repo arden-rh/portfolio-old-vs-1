@@ -2,7 +2,7 @@
   z-index: 1;
   position: relative;
   margin-top: 70vh;
-  background-color: $tertiary-color;
+  background-color: $primary-color-light;
 }
 
 .about-container {
@@ -23,7 +23,7 @@
   img {
     margin: 0 0 2rem 0;
     border-radius: 100%;
-    background-color: aquamarine;
+    background-color: $tertiary-color;
   }
 }
 
@@ -43,10 +43,6 @@
     padding: 2rem 0 2rem 2rem;
     background-color: $primary-color;
     position: relative;
-
-    h2 {
-      padding-bottom: 1rem;
-    }
   }
 
   .about-header::after {
@@ -65,7 +61,7 @@
   .about-container {
     margin: 8% 9% 0 7%;
     padding: 0;
-    background-color: $tertiary-color;
+    background-color: $primary-color-light;
     width: 84%;
     border: 2px solid $secondary-color;
     position: relative;

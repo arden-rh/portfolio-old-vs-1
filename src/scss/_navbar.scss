@@ -122,11 +122,12 @@ nav {
     display: none;
   }
 
-  nav {
+  .side-nav {
     font-family: $secondary-font;
-    color: aquamarine;
+    text-transform: uppercase;
+    color: $tertiary-color;
     position: fixed;
-    right: 20px;
+    right: 26px;
     left: auto;
     top: 30%;
     flex-direction: column;
@@ -142,6 +143,10 @@ nav {
         padding: 1rem 0;
       }
     }
+  }
+
+  .side-nav li:hover {
+    color: $secondary-color;
   }
 
   .top-button {
