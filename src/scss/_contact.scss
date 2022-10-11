@@ -5,7 +5,7 @@
 }
 
 .contact-container {
-  padding: 10% 5% 10% 5%;
+  padding: 10% 5%;
   display: grid;
 }
 
@@ -21,6 +21,6 @@
         padding: 10% 5%;
         background-color: $tertiary-color;
         width: 84%;
-        border: 2px dotted $secondary-color;
+        border: 3px dotted $secondary-color;
     }
   }
