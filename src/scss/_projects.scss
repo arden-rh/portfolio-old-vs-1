@@ -48,7 +48,7 @@
     justify-content: center;
     border: 2px solid $secondary-color;
     background-color: $primary-color;
-    grid-template: 1.5fr 1fr / 15fr 1fr 15fr 1fr 15fr;
+    grid-template: 1fr 2fr / 15fr 1fr 15fr 1fr 15fr;
     gap: 5% 0;
     width: 84%;
     height: 70vh;
@@ -60,6 +60,7 @@
 
     div:nth-child(1) {
       grid-column: 1 / 7;
+      background-color: $primary-color;
     }
 
     div:nth-child(2) {

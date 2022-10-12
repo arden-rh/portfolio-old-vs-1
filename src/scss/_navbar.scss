@@ -129,7 +129,7 @@ nav {
     position: fixed;
     right: 26px;
     left: auto;
-    top: 30%;
+    top: 25%;
     flex-direction: column;
     z-index: 10;
     width: 40px;
@@ -145,8 +145,10 @@ nav {
     }
   }
 
-  .side-nav li:hover {
+  .side-nav a:hover {
     color: $secondary-color;
+    border-left: 2px solid;
+    padding-left: 3px;
   }
 
   .top-button {
