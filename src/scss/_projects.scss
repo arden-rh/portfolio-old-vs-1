@@ -1,6 +1,7 @@
 .projects {
   z-index: 1;
   position: relative;
+  margin-top: 70vh;
   background-color: $primary-color;
 }
 
@@ -11,6 +12,7 @@
 
 @media only screen and (min-width: 1024px) {
   .projects {
+    margin-top: 85vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,7 +22,7 @@
   .projects-header {
     width: 20%;
     border: 2px solid $secondary-color;
-    margin: 8% 50% auto 0;
+    margin: 0 50% auto 0;
     padding: 2rem 0 2rem 2rem;
     background-color: $primary-color;
     position: relative;
@@ -32,6 +34,7 @@
 
   .projects-header::after {
     border: 3px dotted $secondary-color;
+    background-color: $primary-color;
     top: -32px;
     left: 25px;
     z-index: -1;

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Arden Haldorson" />
   <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -19,17 +20,19 @@
   <meta property="og:title" content="Arden R.H. Portfolio" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.arden.se/" />
+  <!-- <meta property="og:image" content="" /> -->
+  <!-- <meta property="og:description" content="" /> -->
   <!-- <meta property="og:image" content="" /> !-->
 </head>
 
 <body>
   <div class="wrapper">
     <div id="top"></div>
-    <div class="navbar">
-      <div class="navbar-container">
+    <header class="header">
+      <div class="header-container">
         <h1 class="logotype"><a href="#top">Arden R.H.</a></h1>
       </div>
-      <nav>
+      <div class="main-nav">
         <button id="menu-button">
           <svg id="ellipsis" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" height="25">
             <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -42,8 +45,12 @@
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>Portfolio</li>
+          <li>CV</li>
         </ul>
-      </nav>
+      </div>
+    </header>
+    <nav>
       <div class="side-nav">
         <ul>
           <li><a href="#top">Home</a></li>
@@ -59,17 +66,29 @@
             d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
         </svg>
       </a>
-    </div>
-    <header id="header">
-      <div class="header-text">
-        <span class="header-greeting">Hello there,</span>
-        <h2>My name is Arden and this is my <span id="portfolio">portfolio</span>.</h2>
-        <p>And if she hasn't been rewritten, then they are still using her. Far far away, behind the word mountains,
-          far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-      </div>
-    </header>
+    </nav>
     <main>
+      <div class="hero">
+        <div class="hero-text">
+          <span class="hero-greeting">Hello there,</span>
+          <h2>My name is Arden</h2><span class="hero-intro">and I'm currently studying Front-end developement in Malmö,
+            Sweden.</span>
+          <p>And if she hasn't been rewritten, then they are still using her. Far far away, behind the word mountains,
+            far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+      </div>
       <div class="inner-background">
+        <section class="projects" id="projects">
+          <div class="projects-header">
+            <h2>Latest Projects</h2>
+          </div>
+          <div class="projects-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </section>
         <section class="about" id="about">
           <div class="about-header">
             <h2>About</h2>
@@ -83,17 +102,6 @@
                 Dragons and
                 taking care of my many green plants.</p>
             </div>
-          </div>
-        </section>
-        <section class="projects" id="projects">
-          <div class="projects-header">
-            <h2>Projects</h2>
-          </div>
-          <div class="projects-container">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
           </div>
         </section>
         <section class="contact" id="contact">
@@ -117,8 +125,8 @@
   <!-- Scripts -->
   <script>
     const menuBtn = document.querySelector("#menu-button");
-    Btn.addEventListener("click", () => {
-      n.classList.toggle("menu-open");
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("menu-open");
     });
   </script>
 </body>

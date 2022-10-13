@@ -1,0 +1,76 @@
+.hero {
+  background-color: $primary-color;
+  width: 90%;
+  height: 70vh;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+
+  h2 {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    margin: 0.4rem 0 0.6rem 0;
+  }
+}
+
+.hero-text {
+  width: 100%;
+  padding: 40% 0 10%;
+  background-color: $primary-color;
+  position: relative;
+  display: block;
+}
+
+.hero-greeting {
+  font-family: $secondary-font;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.hero-intro {
+  font-family: $secondary-font;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  text-align: end;
+}
+
+#portfolio {
+  color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-text {
+    width: 50%;
+    max-width: 700px;
+    border: 2px solid $secondary-color;
+    margin: 18% 30% auto 0;
+    padding: 3rem 2rem;
+    background-color: $primary-color;
+    position: relative;
+
+    p {
+      padding: 2rem;
+    }
+  }
+
+  .hero-text::after {
+    border: 3px dotted $secondary-color;
+    top: -32px;
+    left: 25px;
+    z-index: -1;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+  }
+}

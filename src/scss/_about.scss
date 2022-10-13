@@ -1,7 +1,6 @@
 .about {
   z-index: 1;
   position: relative;
-  margin-top: 70vh;
   background-color: $primary-color-light;
 }
 
@@ -29,7 +28,6 @@
 
 @media only screen and (min-width: 1024px) {
   .about {
-    margin-top: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,7 +57,7 @@
   }
 
   .about-container {
-    margin: 8% 9% 0 7%;
+    margin: 8% 9% 10% 7%;
     padding: 0;
     background-color: $primary-color-light;
     width: 84%;

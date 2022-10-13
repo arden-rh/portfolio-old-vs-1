@@ -1,69 +1,103 @@
-header {
+.header {
   background-color: $primary-color;
-  width: 90%;
-  height: 70vh;
-  padding: 0 5%;
+  width: 93%;
+  height: 40px;
+  padding: 2% 2% 2% 5%;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  z-index: 5;
   display: flex;
-  justify-content: center;
-  z-index: -1;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dotted $secondary-color;
 }
 
-.header-text {
-  width: 100%;
-  padding: 40% 0 10%;
-  background-color: $primary-color;
-  position: relative;
-  display: block;
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
-.header-greeting {
-  font-family: $secondary-font;
-  color: $secondary-color;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+.logotype {
+  font-size: 1rem;
 }
 
-h2 {
-  font-family: $primary-font;
-  color: $secondary-color;
-  letter-spacing: 0.2rem;
-  font-weight: 400;
-  margin: 0.4rem 0 0 0;
+.main-nav {
+  display: flex;
+  justify-content: end;
 }
 
-#portfolio {
-  color: white;
+#menu-button {
+  background-color: transparent;
+  border: 0;
+  width: 30px;
 }
 
-@media only screen and (min-width: 1024px) {
-  .header-text {
-    width: 40%;
-    border: 2px solid $secondary-color;
-    margin: 18% 30% auto 0;
-    padding: 3rem 2rem;
-    background-color: $primary-color;
-    position: relative;
+#menu-button:hover > #ellipsis {
+  fill: $secondary-color;
+}
 
-    p {
-      padding: 2rem;
+#ellipsis {
+  fill: white;
+}
+
+.menu {
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    padding: 0 1em;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+  }
+
+  li:hover {
+    color: $secondary-color;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  button + .menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  button.menu-open + .menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    padding: 0;
+    margin-top: 190px;
+    background-color: $primary-color-light;
+    border: 2px dotted $secondary-color;
+
+    li {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
     }
   }
 
-  .header-text::after {
-    border: 3px dotted $secondary-color;
-    top: -32px;
-    left: 25px;
-    z-index: -1;
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    content: "";
+  button.menu-open > #ellipsis {
+    fill: none;
+    stroke: $secondary-color;
+    stroke-width: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    background-color: transparent;
+    border-bottom: 0;
+    position: relative;
+  }
+
+  #menu-button {
+    display: none;
   }
 }

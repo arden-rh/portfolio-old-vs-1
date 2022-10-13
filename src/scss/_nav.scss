@@ -1,0 +1,64 @@
+.side-nav {
+    display: none;
+  }
+  
+  .top-button {
+    background-color: transparent;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: 2px dotted $secondary-color;
+    position: fixed;
+    bottom: 4%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    opacity: 0.4;
+  }
+  
+  .top-button:hover {
+    opacity: 1;
+  }
+  
+  #top-arrow {
+    fill: $secondary-color;
+  }
+
+  @media only screen and (min-width: 1024px) {
+  
+    .side-nav {
+      display: flex;
+      font-family: $secondary-font;
+      text-transform: uppercase;
+      color: $tertiary-color;
+      position: fixed;
+      right: 26px;
+      left: auto;
+      top: 25%;
+      flex-direction: column;
+      z-index: 10;
+      width: 40px;
+      margin: 0;
+  
+      ul {
+        writing-mode: vertical-lr;
+        display: flex;
+  
+        li {
+          padding: 1rem 0;
+        }
+      }
+    }
+  
+    .side-nav a:hover {
+      color: $secondary-color;
+      border-left: 2px solid;
+      padding-left: 3px;
+    }
+  
+    .top-button {
+      right: 1.2%;
+    }
+  }
