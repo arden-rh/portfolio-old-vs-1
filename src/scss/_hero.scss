@@ -10,12 +10,15 @@
   display: flex;
   justify-content: center;
   z-index: -1;
+}
 
-  h2 {
-    font-size: 4rem;
-    letter-spacing: 0.2rem;
-    margin: 0.4rem 0 0.6rem 0;
-  }
+#name {
+  font-size: 4rem;
+  font-family: $primary-font;
+  color: $secondary-color;
+  letter-spacing: 0.2rem;
+  margin: 0.4rem 0 0.6rem 0;
+  display: block;
 }
 
 .hero-text {

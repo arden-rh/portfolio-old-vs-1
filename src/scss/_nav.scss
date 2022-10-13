@@ -1,64 +1,197 @@
-.side-nav {
-    display: none;
-  }
-  
-  .top-button {
-    background-color: transparent;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    border: 2px dotted $secondary-color;
-    position: fixed;
-    bottom: 4%;
-    right: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 4;
-    opacity: 0.4;
-  }
-  
-  .top-button:hover {
-    opacity: 1;
-  }
-  
-  #top-arrow {
-    fill: $secondary-color;
+.main-nav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index: 6;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $secondary-font;
+  text-transform: uppercase;
+}
+
+#menu-button {
+  background-color: transparent;
+  border: 2px dotted $secondary-color;
+  border-radius: 100%;
+  width: 47px;
+  height: 47px;
+  margin: 0 0 5% 4%;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-button:hover {
+  opacity: 1;
+}
+
+#menu-button:hover > #menu-icon {
+  fill: $secondary-color;
+}
+
+#menu-icon {
+  fill: white;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  background-color: $primary-color-light;
+  border: 2px dotted $secondary-color;
+
+  li {
+    padding: 0 1em;
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
   }
 
-  @media only screen and (min-width: 1024px) {
-  
-    .side-nav {
-      display: flex;
-      font-family: $secondary-font;
-      text-transform: uppercase;
-      color: $tertiary-color;
-      position: fixed;
-      right: 26px;
-      left: auto;
-      top: 25%;
-      flex-direction: column;
-      z-index: 10;
-      width: 40px;
-      margin: 0;
-  
-      ul {
-        writing-mode: vertical-lr;
-        display: flex;
-  
-        li {
-          padding: 1rem 0;
-        }
-      }
-    }
-  
-    .side-nav a:hover {
-      color: $secondary-color;
-      border-left: 2px solid;
-      padding-left: 3px;
-    }
-  
-    .top-button {
-      right: 1.2%;
+  li:hover {
+    color: $secondary-color;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  button + .menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  button.menu-open {
+    position: inherit;
+    left: 2%;
+    bottom: 10%;
+  }
+
+  button.menu-open ~ .top-button {
+    display: none;
+  }
+
+  button.menu-open + .menu {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+    justify-content: center;
+
+    li {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
     }
   }
+
+  button.menu-open > #menu-icon {
+    fill: $secondary-color;
+  }
+}
+
+.side-nav {
+  display: none;
+}
+
+.top-button {
+  background-color: transparent;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  border: 2px dotted $secondary-color;
+  margin: 0 4% 5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.top-button:hover {
+  opacity: 1;
+}
+
+.top-button:hover > #top-arrow {
+  fill: $secondary-color;
+}
+
+#top-arrow {
+  fill: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 6;
+    width: 80%;
+    justify-content: end;
+    align-items: center;
+    padding: 2.2rem 3rem;
+    color: $tertiary-color;
+  }
+
+  .main-nav a:hover {
+    color: $secondary-color;
+    border-bottom: 2px solid;
+    padding-bottom: 3px;
+  }
+
+  .menu {
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    font-size: 1.2rem;
+
+    a {
+      color: $tertiary-color;
+    }
+  }
+
+  .menu li:nth-child(5):hover {
+    color: $tertiary-color;
+  }
+
+  #menu-button {
+    display: none;
+  }
+  .side-nav {
+    display: flex;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    color: $tertiary-color;
+    position: fixed;
+    right: 27px;
+    left: auto;
+    top: 18%;
+    flex-direction: column;
+    z-index: 10;
+    width: 40px;
+    margin: 0;
+
+    ul {
+      writing-mode: vertical-lr;
+      display: flex;
+
+      li {
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  .side-nav a:hover {
+    color: $secondary-color;
+    border-left: 2px solid;
+    padding-left: 3px;
+  }
+
+  .top-button {
+    position: fixed;
+    left: 95%;
+    top: 90%;
+  }
+}

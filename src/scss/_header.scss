@@ -21,83 +21,10 @@
   font-size: 1rem;
 }
 
-.main-nav {
-  display: flex;
-  justify-content: end;
-}
-
-#menu-button {
-  background-color: transparent;
-  border: 0;
-  width: 30px;
-}
-
-#menu-button:hover > #ellipsis {
-  fill: $secondary-color;
-}
-
-#ellipsis {
-  fill: white;
-}
-
-.menu {
-
-  ul {
-    padding: 0;
-  }
-
-  li {
-    padding: 0 1em;
-    font-size: 0.7em;
-    letter-spacing: 0.05em;
-  }
-
-  li:hover {
-    color: $secondary-color;
-  }
-
-  a {
-    color: white;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  button + .menu {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  button.menu-open + .menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    padding: 0;
-    margin-top: 190px;
-    background-color: $primary-color-light;
-    border: 2px dotted $secondary-color;
-
-    li {
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-    }
-  }
-
-  button.menu-open > #ellipsis {
-    fill: none;
-    stroke: $secondary-color;
-    stroke-width: 10px;
-  }
-}
-
 @media only screen and (min-width: 1024px) {
   .header {
     background-color: transparent;
     border-bottom: 0;
     position: relative;
-  }
-
-  #menu-button {
-    display: none;
   }
 }
