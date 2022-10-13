@@ -2,13 +2,26 @@
   display: flex;
   position: fixed;
   bottom: 0;
-  z-index: 6;
+  z-index: 5;
   width: 100%;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   font-family: $secondary-font;
   text-transform: uppercase;
-  background-color: $primary-color-light;
+  background-color: $primary-color;
+  border-top: 2px dotted $secondary-color;
+
+  div:nth-child(2) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+#nav-logo {
+  font-size: 1rem;
+  padding: 0 0 0 2%;
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 #menu-button {
@@ -17,7 +30,7 @@
   border: 0;
   width: 40px;
   height: 40px;
-  margin: 0 2%;
+  margin: 0 2% 0 0;
   opacity: 0.6;
   align-items: center;
   justify-content: center;
@@ -28,7 +41,8 @@
 }
 
 #menu-button:hover > #menu-icon {
-  fill: $secondary-color;
+  fill: $tertiary-color;
+  cursor: pointer;
 }
 
 #menu-icon {
@@ -43,47 +57,71 @@
 .menu {
   padding: 0;
   margin: 0;
-  background-color: $primary-color-light;
-  border: 2px dotted $secondary-color;
+  background-color: $primary-color;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 
   li {
-    padding: 0 1em;
-    font-size: 0.7em;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.05em;
+    z-index: 10;
   }
 
-  li:hover {
-    color: $secondary-color;
+  li:nth-child(1) {
+    display: flex;
+    padding: 1.8rem 0;
+    font-size: 1.5rem;
+    font-family: $primary-font;
+    color: $tertiary-color;
+    letter-spacing: 0.1em;
   }
 
   a {
     color: white;
   }
+
+  a:hover {
+    color: $secondary-color;
+  }
+}
+
+.menu::before {
+  border: 3px dotted $secondary-color;
+  top: 15%;
+  left: 15%;
+  display: block;
+  height: 70%;
+  width: 70%;
+  position: absolute;
+  content: "";
 }
 
 .side-nav {
   display: none;
 }
 
-.top-button {
-  display: none;
+#top-button {
+  display: flex;
   background-color: transparent;
-  border-radius: 100%;
   width: 45px;
   height: 45px;
-  border: 2px dotted $secondary-color;
-  margin: 0 4% 5% 10%;
+  margin: 0;
   align-items: center;
   justify-content: center;
   opacity: 0.6;
 }
 
-.top-button:hover {
+#top-button:hover {
   opacity: 1;
 }
 
-.top-button:hover > #top-arrow {
-  fill: $secondary-color;
+#top-button:hover > #top-arrow {
+  fill: $tertiary-color;
 }
 
 #top-arrow {
@@ -98,31 +136,29 @@
   }
 
   button.menu-open {
-    position: inherit;
+    position: absolute;
     right: 0;
-    bottom: 5%;
-  }
-
-  button.menu-open ~ .top-button {
-    display: none;
+    bottom: 0;
+    z-index: 10;
   }
 
   button.menu-open + .menu {
     display: flex;
     opacity: 1;
     visibility: visible;
-    flex-wrap: wrap;
-    margin: 0;
-    justify-content: center;
-
-    li {
-      padding: 0.3rem 1rem;
-      font-size: 1rem;
-    }
   }
 
-  button.menu-open > #close-icon {
-    fill: $secondary-color;
+  #top-button.menu-open {
+    display: none;
+  }
+
+  #nav-logo.menu-open {
+    display: none;
+  }
+
+  button.menu-open > #close-icon:hover {
+    fill: $tertiary-color;
+    cursor: pointer;
   }
 
   button.menu-open > #menu-icon {
@@ -144,14 +180,15 @@
     width: 80%;
     justify-content: end;
     align-items: center;
-    padding: 2.2rem 3rem;
+    padding: 2% 3rem;
     color: $tertiary-color;
-  }
+    background-color: transparent;
 
-  .main-nav a:hover {
-    color: $secondary-color;
-    border-bottom: 2px solid;
-    padding-bottom: 3px;
+    a:hover {
+      color: $secondary-color;
+      border-bottom: 2px solid;
+      padding-bottom: 3px;
+    }
   }
 
   .menu {
@@ -163,10 +200,19 @@
     a {
       color: $tertiary-color;
     }
-  }
 
-  .menu li:nth-child(5):hover {
-    color: $tertiary-color;
+    li {
+      padding: 0 1em;
+      font-size: 0.7em;
+    }
+
+    li:nth-child(1) {
+      display: none;
+    }
+
+    li:nth-child(6):hover {
+      color: $tertiary-color;
+    }
   }
 
   #menu-button {
@@ -181,9 +227,10 @@
     display: flex;
     font-family: $secondary-font;
     text-transform: uppercase;
+    font-size: 0.9rem;
     color: $tertiary-color;
     position: fixed;
-    right: 27px;
+    right: 22px;
     left: auto;
     top: 18%;
     flex-direction: column;
@@ -207,10 +254,12 @@
     padding-left: 3px;
   }
 
-  .top-button {
+  #top-button {
     display: flex;
     position: fixed;
     left: 95%;
     top: 90%;
+    border: 2px dotted $secondary-color;
+    border-radius: 100%;
   }
 }
