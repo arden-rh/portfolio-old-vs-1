@@ -1,7 +1,3 @@
-.about {
-
-}
-
 .about-header::after {
   border: 3px dotted $secondary-color;
   background-color: $primary-color;
@@ -38,14 +34,6 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .about {
-
-  }
-
-  .about-header {
-
-  }
-
   .about-header::after {
     border: 3px dotted $secondary-color;
     background-color: $primary-color;

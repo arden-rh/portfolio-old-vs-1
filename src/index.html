@@ -7,14 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Arden Haldorson" />
   <link rel="stylesheet" href="style.min.css" />
-  <link rel="icon" href="/src/favicon_io/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Serif:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <title>Arden R.H. Portfolio</title>
   <meta property="og:title" content="Arden R.H. Portfolio" />
@@ -54,7 +55,7 @@
               <path
                 d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
             </svg>
-            </button>
+          </button>
           <ul class="menu" id="menu">
             <li>Menu</li>
             <li><a href="#top">Home</a></li>
@@ -144,10 +145,10 @@
       const navLogo = document.getElementById("nav-logo");
       menuBtn.onclick = function () {
       menuBtn.classList.toggle("menu-open");
-          menuList.classList.toggle("menu-open");
-          menuArrow.classList.toggle("menu-open");
-          navLogo.classList.toggle("menu-open");
-        }
+        menuList.classList.toggle("menu-open");
+        menuArrow.classList.toggle("menu-open");
+        navLogo.classList.toggle("menu-open");
+      }
 
         menuList.onclick = function (clickEvent) {
           if (clickEvent.target.id !== "menu" && clickEvent.target.id !== "menu-button") {
