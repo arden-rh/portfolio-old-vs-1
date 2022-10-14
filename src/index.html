@@ -92,7 +92,7 @@
       <div class="inner-background">
         <section class="projects" id="projects">
           <div class="projects-header">
-            <h2>Latest Projects</h2>
+            <h2>Latest News</h2>
           </div>
           <div class="projects-container">
             <div></div>
@@ -136,10 +136,6 @@
   </div>
   <!-- Scripts -->
   <script>
-      // const menuBtn = document.querySelector("#menu-button");
-      // menuBtn.addEventListener("click", () => {
-      //   menuBtn.classList.toggle("menu-open");
-      // });
 
       const menuBtn = document.getElementById("menu-button");
 
@@ -159,6 +155,8 @@
           if (clickEvent.target.id !== "menu" && clickEvent.target.id !== "menu-button") {
             menuBtn.classList.remove("menu-open");
             menuList.classList.remove("menu-open");
+            menuArrow.classList.remove("menu-open");
+            navLogo.classList.remove("menu-open");
           }
         }
 

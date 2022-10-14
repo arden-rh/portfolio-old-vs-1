@@ -8,8 +8,7 @@
   align-items: center;
   font-family: $secondary-font;
   text-transform: uppercase;
-  background-color: $primary-color;
-  border-top: 2px dotted $secondary-color;
+  background-color: $secondary-color;
 
   div:nth-child(2) {
     display: flex;
@@ -41,7 +40,7 @@
 }
 
 #menu-button:hover > #menu-icon {
-  fill: $tertiary-color;
+  fill: $primary-color;
   cursor: pointer;
 }
 
@@ -121,7 +120,7 @@
 }
 
 #top-button:hover > #top-arrow {
-  fill: $tertiary-color;
+  fill: $primary-color;
 }
 
 #top-arrow {
@@ -191,11 +190,22 @@
     }
   }
 
+  #nav-logo {
+    display: none;
+  }
+
+  .menu::before {
+    display: none;
+  }
+
   .menu {
     border: 0;
     background-color: transparent;
     display: flex;
     font-size: 1.2rem;
+    height: auto;
+    width: auto;
+    flex-direction: row;
 
     a {
       color: $tertiary-color;
@@ -261,5 +271,9 @@
     top: 90%;
     border: 2px dotted $secondary-color;
     border-radius: 100%;
+  }
+
+  #top-button:hover > #top-arrow {
+    fill: $tertiary-color;
   }
 }

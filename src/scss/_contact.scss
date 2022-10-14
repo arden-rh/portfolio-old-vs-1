@@ -2,6 +2,32 @@
   z-index: 1;
   position: relative;
   background-color: $primary-color-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+  width: 40%;
+  padding: 2% 5%;
+  display: flex;
+  position: relative;
+  background-color: $primary-color;
+  border: 2px solid $secondary-color;
+  margin: 0 8% 0 0;
+}
+
+.contact-header::after {
+  border: 3px dotted $secondary-color;
+  background-color: $primary-color;
+  top: -26px;
+  left: 21px;
+  z-index: -1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  content: "";
 }
 
 .contact-container {
