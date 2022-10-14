@@ -2,13 +2,14 @@
   background-color: $primary-color;
   width: 30%;
   height: 30px;
-  padding: 2% 2% 2% 5%;
+  padding: 2% 2% 2% 2%;
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 30%;
   z-index: 5;
   display: flex;
-  border: 2px dotted $secondary-color;
+  justify-content: center;
+  border: 3px dotted $secondary-color;
 }
 
 .header-container {

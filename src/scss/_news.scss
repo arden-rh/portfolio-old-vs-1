@@ -1,22 +1,6 @@
 .news {
-  z-index: 1;
-  position: relative;
   margin-top: 90vh;
-  background-color: $primary-color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 80vh;
-}
-
-.news-header {
-  width: 40%;
-  padding: 2% 5%;
-  display: flex;
-  position: relative;
-  background-color: $primary-color;
-  border: 2px solid $secondary-color;
-  margin: 0 8% 0 0;
 }
 
 .news-header::after {
@@ -34,7 +18,7 @@
 
 @media only screen and (min-width: 1024px) {
   .news {
-    margin-top: 85vh;
+    margin-top: 88vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -42,13 +26,6 @@
   }
 
   .news-header {
-    width: 20%;
-    border: 2px solid $secondary-color;
-    margin: 0 50% auto 0;
-    padding: 2rem 0 2rem 2rem;
-    background-color: $primary-color;
-    position: relative;
-
     p {
       padding: 2rem;
     }
@@ -68,16 +45,11 @@
   }
 
   .news-container {
-    position: relative;
     display: grid;
-    justify-content: center;
-    border: 2px solid $secondary-color;
     background-color: $primary-color;
     grid-template: 1fr 2fr / 15fr 1fr 15fr 1fr 15fr;
     gap: 5% 0;
-    width: 84%;
     height: 70vh;
-    margin: 8% 9% 10% 7%;
 
     div {
       background-color: $primary-color-light;
