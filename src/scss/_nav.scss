@@ -23,6 +23,10 @@
   letter-spacing: 0.05em;
 }
 
+#nav-logo:hover {
+  color: $primary-color;
+}
+
 #menu-button {
   display: flex;
   background-color: transparent;
@@ -124,14 +128,15 @@
 }
 
 #top-button:hover > #top-arrow {
-  fill: $primary-color;
+  color: $primary-color;
 }
 
 #top-arrow {
-  fill: white;
+  color: white;
+  font-size: 1.7rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   button + .menu {
     display: none;
     opacity: 0;
@@ -303,6 +308,10 @@
   }
 
   #top-button:hover > #top-arrow {
-    fill: $tertiary-color;
+    color: $secondary-color;
+  }
+
+  #top-arrow {
+    color: $tertiary-color;
   }
 }

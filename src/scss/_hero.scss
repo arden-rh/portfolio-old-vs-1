@@ -22,7 +22,7 @@
 
 .hero-text {
   width: 100%;
-  padding: 40% 0 10%;
+  padding: 50% 0 10%;
   background-color: $primary-color;
   position: relative;
   display: block;
@@ -55,12 +55,18 @@
   color: white;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero-text {
+    padding: 30% 0 10%;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .hero-text {
     width: 70%;
     max-width: 660px;
     border: 2px solid $secondary-color;
-    margin: 18% 30% auto 0;
+    margin: 18% 25% auto 0;
     padding: 3rem 2rem;
     background-color: $primary-color;
     position: relative;

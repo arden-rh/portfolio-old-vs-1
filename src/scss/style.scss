@@ -27,7 +27,15 @@ body {
 h2 {
   font-family: $primary-font;
   color: $secondary-color;
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+}
+
+h3 {
+  font-family: $primary-font;
+  color: $tertiary-color;
+  font-weight: 500;
+  letter-spacing: 0.1em;
 }
 
 li {
@@ -62,7 +70,6 @@ li {
 .section-header {
   position: relative;
   font-size: 0.8rem;
-  letter-spacing: 0.15rem;
   width: 50%;
   padding: 0.5rem 0.8rem;
   display: flex;
@@ -85,7 +92,6 @@ li {
   .section-header {
     position: relative;
     font-size: 1rem;
-    letter-spacing: 0.15rem;
     width: 20%;
     border: 2px solid $secondary-color;
     margin: 0 50% auto 0;

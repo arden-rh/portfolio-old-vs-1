@@ -1,24 +1,43 @@
 .header {
-  background-color: $primary-color;
-  width: 30%;
-  height: 30px;
-  padding: 2% 2% 2% 2%;
-  position: absolute;
-  top: 20px;
-  left: 30%;
   z-index: 5;
   display: flex;
   justify-content: center;
-  border: 3px dotted $secondary-color;
+  height: 20px;
+  padding: 7% 0;
+  border-bottom: 3px dotted $secondary-color;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-color: $primary-color;
+  width: 90%;
+  margin-top: 0px;
+
+  div:first-child {
+    display: flex;
+  }
+
+  a:hover {
+    color: $secondary-color;
+  }
+
+  a:last-child {
+    font-size: 1.4rem;
+  }
 }
 
 .logotype {
   font-size: 1rem;
+  padding: 1rem 0.5rem;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 4% 0;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -26,15 +45,21 @@
     background-color: transparent;
     border-bottom: 0;
     position: relative;
-    width: 94%;
+    width: 96%;
     top: 0;
     left: 0;
     height: 40px;
-    padding: 1% 3%;
+    padding: 1% 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 0;
     border-bottom: 3px dotted $secondary-color;
+  }
+
+  .header-container {
+    a:last-child {
+      display: none;
+    }
   }
 }
