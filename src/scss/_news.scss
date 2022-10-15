@@ -47,7 +47,7 @@
   .news-container {
     display: grid;
     background-color: $primary-color;
-    grid-template: 1fr 2fr / 15fr 1fr 15fr 1fr 15fr;
+    grid-template: 1fr / 15fr 1fr 15fr 1fr 15fr;
     gap: 5% 0;
     height: 70vh;
 
@@ -55,20 +55,20 @@
       background-color: $primary-color-light;
     }
 
-    div:nth-child(1) {
-      grid-column: 1 / 7;
-      background-color: $primary-color;
-    }
+    // div:nth-child(1) {
+    //   grid-column: 1 / 7;
+    //   background-color: $primary-color;
+    // }
 
-    div:nth-child(2) {
+    div:nth-child(1) {
       grid-column: 1;
     }
 
-    div:nth-child(3) {
+    div:nth-child(2) {
       grid-column: 3;
     }
 
-    div:nth-child(4) {
+    div:nth-child(3) {
       grid-column: 5;
     }
   }

@@ -2,10 +2,18 @@
 <html lang="en-GB">
 
 <head>
+  <!-- Meta -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Arden Haldorson" />
+  <meta property="og:title" content="Arden R.H. Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.arden.se/" />
+  <!-- <meta property="og:image" content="" /> -->
+  <!-- <meta property="og:description" content="" /> -->
+  
+  <!-- Links -->
   <link rel="stylesheet" href="style.min.css" />
   <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -17,17 +25,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Serif:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Title -->
   <title>Arden R.H. Portfolio</title>
-  <meta property="og:title" content="Arden R.H. Portfolio" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.arden.se/" />
-  <!-- <meta property="og:image" content="" /> -->
-  <!-- <meta property="og:description" content="" /> -->
 </head>
 
 <body>
   <div class="wrapper">
-    <div id="top"></div>
     <header class="header">
       <div class="header-container">
         <h1 class="logotype"><a href="#top">Arden R.H.</a></h1>
@@ -37,7 +43,7 @@
       <div class="main-nav">
         <div id="nav-logo"><a href="#top">Arden R.H.</a></div>
         <div>
-          <a id="top-button" href="#top" tabindex="0" role="button">
+          <a id="top-button" href="#" tabindex="0" role="button">
             <svg id="top-arrow" height="25" width="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
               <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
               <path
@@ -58,7 +64,7 @@
           </button>
           <ul class="menu" id="menu">
             <li>Menu</li>
-            <li><a href="#top">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -68,25 +74,35 @@
           </ul>
         </div>
       </div>
-      <div class="side-nav">
+      <div class="right-side-nav">
         <ul>
-          <li><a href="#top">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#news">News</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+      </div>
+      <div class="left-side-social">
+        <a href="https://twitter.com/ardentmind" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/ardenhaldorson/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/arden.r.h/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/arden-rh" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:arden.haldorson@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </nav>
     <main>
       <div class="hero">
         <div class="hero-text">
           <span class="hero-greeting">Hello there,</span>
-          <span id="name">My name is Arden</span><span class="hero-intro">and I'm currently studying Front-end
-            developement in
-            Malmö,
-            Sweden.</span>
-          <p>And if she hasn't been rewritten, then they are still using her. Far far away, behind the word mountains,
-            far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <span id="name">My name is Arden.</span>
+          <p>I'm currently studying Front-end developement in Malmö, Sweden.
+            This is my website where you can find my
+            latest projects, for school and leisure.
+            <span class="second-p-text">
+              If you find anything interesting or would like to give
+              me some feedback I'd love to hear from you!
+            </span>
+          </p>
         </div>
       </div>
       <div class="inner-background">
@@ -95,10 +111,21 @@
             <h2>Latest News</h2>
           </div>
           <div class="news-container section-container">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+              <h3>Website</h3>
+              <p></p>
+              <img src="" alt="">
+            </div>
+            <div>
+              <h3>Design Project</h3>
+              <p></p>
+              <img src="" alt="">
+            </div>
+            <div>
+              <h3>Header 3</h3>
+              <p></p>
+              <img src="" alt="">
+            </div>
           </div>
         </section>
         <section class="about section" id="about">
@@ -108,10 +135,14 @@
           <div class="about-container section-container">
             <div class="about-content">
               <img src="" height="200" width="200">
+              <div class="about-text">
               <p>My name is Arden and I'm currently studyig Front End developement at Medieinstitutet in Malmö, Sweden.
                 I'm a happy, easy going guy that enjoys spending time drinking coffee with friends, playing Dungeons and
-                Dragons and
-                taking care of my many green plants.</p>
+                Dragons and taking care of my many green plants. <span class="second-p-text">If you want to know more about my work
+                  experience feel free to check out my <a href="#">CV</a>.</span></p>
+                <h3>Skills</h3>
+                <p></p>
+                </div>
             </div>
           </div>
         </section>
