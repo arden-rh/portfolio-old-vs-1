@@ -194,6 +194,10 @@
     color: $tertiary-color;
     background-color: transparent;
 
+    a {
+      padding-left: 3px;
+    }
+
     a:hover {
       color: $secondary-color;
       border-bottom: 2px solid;
@@ -234,6 +238,7 @@
 
     li:nth-child(6):hover {
       color: $tertiary-color;
+      cursor: default;
     }
   }
 
@@ -277,7 +282,7 @@
     position: fixed;
     right: 2%;
     left: auto;
-    top: 20%;
+    top: 18%;
     flex-direction: column;
     z-index: 10;
     width: 40px;
@@ -291,6 +296,10 @@
         padding: 1rem 0;
         letter-spacing: 0.15rem;
       }
+    }
+
+    a {
+      padding-top: 3px;
     }
   }
 
