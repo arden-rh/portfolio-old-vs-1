@@ -17,6 +17,7 @@
 
   div:first-child {
     display: flex;
+    align-items: center;
   }
 
   a:hover {
@@ -29,9 +30,15 @@
 }
 
 .logotype {
-  font-size: 1rem;
-  padding: 1rem 0.5rem;
+  padding: 0 0.2rem;
   margin: 0;
+}
+
+h1 {
+  font-family: $primary-font;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -45,11 +52,11 @@
     background-color: transparent;
     border-bottom: 0;
     position: relative;
-    width: 96%;
+    width: 97%;
     top: 0;
     left: 0;
     height: 40px;
-    padding: 1% 2%;
+    padding: 1% 1.5%;
     display: flex;
     align-items: center;
     justify-content: space-between;

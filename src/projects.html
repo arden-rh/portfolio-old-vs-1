@@ -2,10 +2,18 @@
 <html lang="en-GB">
 
 <head>
+    <!-- Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Arden Haldorson" />
+    <meta property="og:title" content="Arden R.H. Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.arden.se/" />
+    <!-- <meta property="og:image" content="" /> -->
+    <!-- <meta property="og:description" content="" /> -->
+
+    <!-- Links -->
     <link rel="stylesheet" href="style.min.css" />
     <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -15,75 +23,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Serif:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Serif:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <title>Arden R.H. Portfolio</title>
-    <meta property="og:title" content="Arden R.H. Portfolio" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.arden.se/" />
-    <!-- <meta property="og:image" content="" /> -->
-    <!-- <meta property="og:description" content="" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Title -->
+    <title>Arden R.H. Portfolio | Projects</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="header-container">
-                <h1 class="logotype"><a href="#top">Arden R.H.</a></h1>
+                <a href="/portfolio/src/index.html">
+                    <div>
+                        <img height="47" src="images/logo.png" />
+                        <h1 class="logotype">
+                            Arden R.H.
+                        </h1>
+                    </div>
+                </a>
+                <a href="mailto:arden.haldorson@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </header>
         <nav>
             <div class="main-nav">
-                <div id="nav-logo"><a href="#top">Arden R.H.</a></div>
+                <a id="nav-logo" href="/portfolio/src/index.html">Arden R.H.</a>
                 <div>
                     <a id="top-button" href="#" tabindex="0" role="button">
-                        <svg id="top-arrow" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 384 512">
-                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
-                        </svg>
+                        <i id="top-arrow" class="fa-solid fa-arrow-up"></i>
                     </a>
                     <button id="menu-button">
-                        <svg id="menu-icon" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                        </svg>
-                        <svg id="close-icon" width="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                            <path
-                                d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
-                        </svg>
+                        <i id="menu-icon" class="fa-solid fa-bars"></i>
+                        <i id="close-icon" class="fa-solid fa-xmark"></i>
                     </button>
                     <ul class="menu" id="menu">
                         <li>Menu</li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/portfolio/src/index.html">Home</a></li>
+                        <li><a href="/portfolio/src/index.html#news">Top Projects</a></li>
+                        <li><a href="/portfolio/src/index.html#about">About</a></li>
+                        <li><a href="/portfolio/src/index.html#contact">Contact</a></li>
                         <li>|</li>
-                        <li><a>Projects</a></li>
+                        <li><a href="/portfolio/src/projects.html">Projects</a></li>
                         <li>CV</li>
                     </ul>
                 </div>
             </div>
-            <div class="side-nav">
+            <div class="right-side-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/portfolio/src/index.html">Home</a></li>
+                    <li><a href="/portfolio/src/index.html#news">Top Projects</a></li>
+                    <li><a href="/portfolio/src/index.html#about">About</a></li>
+                    <li><a href="/portfolio/src/index.html#contact">Contact</a></li>
                 </ul>
+            </div>
+            <div class="left-side-social">
+                <a href="https://twitter.com/ardentmind" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/ardenhaldorson/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/arden.r.h/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/arden-rh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:arden.haldorson@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </nav>
         <main>
-            <section class="projects-hero">
-                Projects
-            </section>
-            <section class="projects">
-                Projects
-            </section>
+            <div class="projects-hero">
+                <div class="hero-text">
+                    <h2>Projects</h2>
+                    <p>Work in progress...</p>
+                </div>
+            </div>
+            <div class="inner-background">
+                <section class="projects section" id="projects">
+                </section>
+            </div>
         </main>
         <footer id="footer">
             <div>&copy; Arden Haldorson</div>

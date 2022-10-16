@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Serif:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto+Serif:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
@@ -36,12 +36,14 @@
   <div class="wrapper">
     <header class="header">
       <div class="header-container">
-        <div>
-          <img height="50" src="images/logo_a_1.png" />
-          <h1 class="logotype">
-            Arden R.H.
-          </h1>
-        </div>
+        <a href="#">
+          <div>
+            <img height="47" src="images/logo.png" />
+            <h1 class="logotype">
+              Arden R.H.
+            </h1>
+            </div>
+        </a>
         <a href="mailto:arden.haldorson@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </header>
@@ -53,21 +55,13 @@
             <i id="top-arrow" class="fa-solid fa-arrow-up"></i>
           </a>
           <button id="menu-button">
-            <svg id="menu-icon" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-              <path
-                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-            </svg>
-            <svg id="close-icon" width="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-              <path
-                d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
-            </svg>
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+            <i id="close-icon" class="fa-solid fa-xmark"></i>
           </button>
           <ul class="menu" id="menu">
             <li>Menu</li>
             <li><a href="#">Home</a></li>
-            <li><a href="#news">News</a></li>
+            <li><a href="#news">Top Projects</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>|</li>
@@ -79,7 +73,7 @@
       <div class="right-side-nav">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#news">News</a></li>
+          <li><a href="#news">Top Projects</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -110,23 +104,32 @@
       <div class="inner-background">
         <section class="news section" id="news">
           <div class="news-header section-header">
-            <h2>Latest News</h2>
+            <h2>Top Projects</h2>
           </div>
           <div class="news-container section-container">
-            <div>
-              <h3>Website</h3>
-              <p></p>
-              <img src="" alt="">
+            <div class="slide">
+              <input id="carousel-1" type="radio" name="carousel" checked>
+              <div class="slide-content">
+                <h3>Barbershop</h3>
+                <img height="250" width="310" src="" alt="">
+              </div>
+              <label id="label-slide-1" for="carousel-1"></label>
             </div>
-            <div>
-              <h3>Design Project</h3>
-              <p></p>
-              <img src="" alt="">
+            <div class="slide">
+              <input id="carousel-2" type="radio" name="carousel">
+              <div class="slide-content">
+                <h3>Design Project</h3>
+                <img height="250" width="310" src="" alt="">
+              </div>
+              <label id="label-slide-2" for="carousel-2"></label>
             </div>
-            <div>
-              <h3>Header 3</h3>
-              <p></p>
-              <img src="" alt="">
+            <div class="slide">
+              <input id="carousel-3" type="radio" name="carousel">
+              <div class="slide-content">
+                <h3>Website</h3>
+                <img height="250" width="310" src="" alt="">
+              </div>
+              <label id="label-slide-3" for="carousel-3"></label>
             </div>
           </div>
         </section>
@@ -151,7 +154,7 @@
                   <li>HTML</li>
                   <li>CSS</li>
                 </ul>
-                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -185,19 +188,19 @@
       const navLogo = document.getElementById("nav-logo");
       menuBtn.onclick = function () {
       menuBtn.classList.toggle("menu-open");
-        menuList.classList.toggle("menu-open");
-        menuArrow.classList.toggle("menu-open");
-        navLogo.classList.toggle("menu-open");
-      }
+      menuList.classList.toggle("menu-open");
+      menuArrow.classList.toggle("menu-open");
+      navLogo.classList.toggle("menu-open");
+    }
 
-        menuList.onclick = function (clickEvent) {
-          if (clickEvent.target.id !== "menu" && clickEvent.target.id !== "menu-button") {
-            menuBtn.classList.remove("menu-open");
-            menuList.classList.remove("menu-open");
-            menuArrow.classList.remove("menu-open");
-            navLogo.classList.remove("menu-open");
-          }
+      menuList.onclick = function (clickEvent) {
+        if (clickEvent.target.id !== "menu" && clickEvent.target.id !== "menu-button") {
+          menuBtn.classList.remove("menu-open");
+          menuList.classList.remove("menu-open");
+          menuArrow.classList.remove("menu-open");
+          navLogo.classList.remove("menu-open");
         }
+      }
 
   </script>
 </body>
