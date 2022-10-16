@@ -277,7 +277,7 @@
     display: flex;
     font-family: $secondary-font;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: $tertiary-color;
     position: fixed;
     right: 2%;
@@ -312,10 +312,13 @@
   #top-button {
     display: flex;
     position: fixed;
-    left: 95%;
-    top: 90%;
+    right: 2%;
+    bottom: 3%;
     border: 2px dotted $secondary-color;
     border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    padding: 0;
   }
 
   #top-button:hover > #top-arrow {
@@ -324,5 +327,6 @@
 
   #top-arrow {
     color: $tertiary-color;
+    font-size: 1.3rem;
   }
 }

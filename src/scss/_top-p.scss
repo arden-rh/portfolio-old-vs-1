@@ -61,14 +61,30 @@ input[name="carousel"] {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.slide-content {
   h3 {
     position: absolute;
     z-index: 3;
-    top: 35%;
+    top: 0;
     left: auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 32%;
+    background-color: rgba($primary-color, 0.4);
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    cursor: default;
+  }
+
+  h3:hover {
+    background-color: transparent;
+    color: transparent;
+  }
+
+  h3:focus {
+    background-color: transparent;
+    color: transparent;
   }
 }
 
