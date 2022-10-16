@@ -19,7 +19,7 @@
 #nav-logo {
   font-size: 1rem;
   padding: 0 0 0 2%;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.05em;
 }
 
@@ -33,7 +33,7 @@
   border: 0;
   width: 40px;
   height: 40px;
-  margin: 0 2% 0 0;
+  margin: 0;
   opacity: 0.6;
   align-items: center;
   justify-content: center;
@@ -44,17 +44,19 @@
 }
 
 #menu-button:hover > #menu-icon {
-  fill: $primary-color;
+  color: $primary-color;
   cursor: pointer;
 }
 
 #menu-icon {
-  fill: white;
+  color: white;
+  font-size: 1.7rem;
 }
 
 #close-icon {
   display: none;
-  fill: white;
+  color: white;
+  font-size: 1.7rem;
 }
 
 .menu {
@@ -165,7 +167,7 @@
   }
 
   button.menu-open > #close-icon:hover {
-    fill: $tertiary-color;
+    color: $secondary-color;
     cursor: pointer;
   }
 
