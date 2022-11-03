@@ -14,6 +14,26 @@
 .contact-container {
   padding: 10% 5%;
   display: flex;
+  flex-direction: column;
+
+  p {
+    padding: 1rem 2rem 0.5rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    padding: 0.4em 0;
+    cursor: pointer;
+
+    i {
+      padding-right: 0.6em;
+      color: $secondary-color;
+    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -40,8 +60,17 @@
   .contact-container {
     background-color: $primary-color-light;
 
-    p {
-      padding: 2rem;
+    div {
+      flex-direction: row;
+      padding: 0 2em 2em 2em;
+    }
+
+    ul:nth-child(2) {
+      padding-left: 100px;
+    }
+
+    li:hover {
+      color: $secondary-color;
     }
   }
 
