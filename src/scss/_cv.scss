@@ -10,10 +10,14 @@
 	display: flex;
 	justify-content: center;
 	z-index: -1;
+
+	div {
+		width: 70%;
+	}
 }
 
 .cv {
-	margin: 50vh 0 10vh 0;
+	margin: 45vh 0 10vh 0;
 	height: 80vh;
 	display: flex;
 	flex-direction: column;
@@ -22,33 +26,31 @@
 }
 
 @media only screen and (min-width: 1024px) {
-	.hero-text {
-		width: 70%;
-		max-width: 660px;
-		border: 2px solid $secondary-color;
-		margin: 18% 25% auto 0;
-		padding: 3rem 2rem;
-		background-color: $primary-color;
-		position: relative;
-
-		p {
-			padding: 0;
+	.cv-hero {
+		div {
+			width: 30%;
+			max-width: 660px;
+			border: 2px solid $secondary-color;
+			margin: 15% 40% auto 0;
+			padding: 2rem 2rem;
+			background-color: $primary-color;
+			position: relative;
 		}
+
+        div::after {
+            border: 3px dotted $secondary-color;
+            top: -32px;
+            left: 25px;
+            z-index: -1;
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            content: "";
+        }
 	}
 
-	.hero-text::after {
-		border: 3px dotted $secondary-color;
-		top: -32px;
-		left: 25px;
-		z-index: -1;
-		display: block;
-		height: 100%;
-		width: 100%;
-		position: absolute;
-		content: "";
+	.cv {
+		height: 100vh;
 	}
-
-    .cv {
-        height: 100vh;
-    }
 }

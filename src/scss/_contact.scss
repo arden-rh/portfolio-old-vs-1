@@ -17,7 +17,7 @@
   flex-direction: column;
 
   p {
-    padding: 1rem 2rem 0.5rem;
+    padding: 2rem 2rem 0.5rem;
   }
 
   div {
@@ -26,11 +26,12 @@
   }
 
   li {
-    padding: 0.4em 0;
+    padding: 0.4rem 0;
+    font-size: 1.1rem;
     cursor: pointer;
 
     i {
-      padding-right: 0.6em;
+      padding-right: 0.6rem;
       color: $secondary-color;
     }
   }
