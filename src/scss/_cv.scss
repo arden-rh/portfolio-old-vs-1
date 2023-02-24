@@ -13,7 +13,7 @@
 .cv {
 	margin: 30vh 0 10vh 0;
 	height: 80vh;
-	width: 100%;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,7 +21,7 @@
 }
 
 .cv-container {
-	margin: 10% 0;
+	margin: 10% auto;
 	width: 100%;
 	height: 80vh;
 	display: flex;
@@ -59,10 +59,10 @@
 @media only screen and (min-width: 1024px) {
 
 	.cv {
-		margin: 10vh 0;
+		margin: 10% auto;
 		height: 100vh;
-		max-width: 660px;
-		margin: 15% 40% auto 0;
+		width: 100%;
+		max-width: 900px;
 		padding: 2rem 2rem;
 		background-color: $primary-color;
 		position: relative;
@@ -72,8 +72,9 @@
 		height: 100vh;
 	}
 
-	.cv-header {
-		width: 30%;
+	#cv-header {
+		width: 40%;
+		margin: 0 0 auto 30%;
 	}
 
 	.cv-header::after {

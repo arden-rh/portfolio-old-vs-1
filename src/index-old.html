@@ -38,7 +38,7 @@
       <div class="header-container">
         <a href="#">
           <div>
-            <img height="50" src="images/logo.png" />
+            <img height="47" src="images/logo.png" />
             <h1 class="logotype">
               Arden R.H.
             </h1>
@@ -61,11 +61,22 @@
           <ul class="menu" id="menu">
             <li>Menu</li>
             <li><a href="#">Home</a></li>
+            <li><a href="#top-ps">Top Projects</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li>|</li>
+            <li><a href="/projects.html">Projects</a></li>
             <li><a href="/cv.html">CV</a></li>
           </ul>
         </div>
+      </div>
+      <div class="right-side-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#top-ps">Top Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
       <div class="left-side-social">
         <a href="mailto:arden.haldorson@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
@@ -80,19 +91,79 @@
         <div class="hero-text">
           <span class="hero-greeting">Hello there,</span>
           <span id="name">My name is Arden.</span>
-          <p>I'm a Front-end developement student living in Malmö, Sweden. This is my portfolio, which for the time being is being updated.
+          <p>I'm currently studying Front-end developement in Malmö, Sweden.
+            This is my website where you can find my
+            latest projects, for school and leisure.
             <span class="second-p-text">
-              If you would like to find some of my work please consider visiting my GitHub-profile or LinkedIn, links can be found ⇩
+              If you find anything interesting or would like to give
+              me some feedback I'd love to hear from you!
             </span>
           </p>
         </div>
       </div>
       <div class="inner-background">
+        <section class="top-ps section" id="top-ps">
+          <div class="top-ps-header section-header">
+            <h2>Top Projects</h2>
+          </div>
+          <div class="top-ps-container section-container">
+            <div class="slide">
+              <input id="carousel-1" type="radio" name="carousel" checked>
+              <div class="slide-content">
+                <h3>Logotype</h3>
+                <img height="250" width="310" src="images/slide_logotype.svg" alt="picture of website logotype">
+              </div>
+              <label id="label-slide-1" for="carousel-1"></label>
+            </div>
+            <div class="slide">
+              <input id="carousel-2" type="radio" name="carousel">
+              <div class="slide-content">
+                <h3>Barbershop</h3>
+                <img height="250" width="310" src="" alt="">
+              </div>
+              <label id="label-slide-2" for="carousel-2"></label>
+            </div>
+            <div class="slide">
+              <input id="carousel-3" type="radio" name="carousel">
+              <div class="slide-content">
+                <h3>Design Project</h3>
+                <img height="250" width="310" src="images/slide_design-project.png" alt="">
+              </div>
+              <label id="label-slide-3" for="carousel-3"></label>
+            </div>
+          </div>
+        </section>
+        <section class="about section" id="about">
+          <div class="about-header section-header">
+            <h2>About</h2>
+          </div>
+          <div class="about-container section-container">
+            <div class="about-content">
+              <img src="images/profil_pic.jpg" height="200" width="200">
+              <div class="about-text">
+                <p>My name is Arden and I'm currently studying Front End developement at Medieinstitutet in Malmö,
+                  Sweden.
+                  I'm a happy, easy going guy that enjoys spending time drinking coffee with friends, playing Dungeons
+                  and
+                  Dragons and taking care of my many green plants. <span class="second-p-text">If you want to know more
+                    about my work
+                    experience feel free to check out my <a href="/cv.html">CV</a>.</span></p>
+                <h3 id="skills">Skills</h3>
+                <ul>
+                  <li>Graphic Design</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="contact section" id="contact">
           <div class="contact-header section-header">
             <h2>Contact</h2>
           </div>
           <div class="contact-container section-container">
+            <p>I'd love to get in contact with you! You can reach me by using one of the channels listed below.</p>
             <div>
               <ul>
                 <li>

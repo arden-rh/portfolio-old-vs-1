@@ -11,15 +11,6 @@
   z-index: -1;
 }
 
-#name {
-  font-size: 4rem;
-  font-family: $primary-font;
-  color: $secondary-color;
-  letter-spacing: 0.2rem;
-  margin: 0.4rem 0 0.8rem 0;
-  display: block;
-}
-
 .hero-text {
   width: 100%;
   padding: 40% 0 10%;
@@ -52,6 +43,15 @@
   text-align: end;
 }
 
+#name {
+  font-size: 4rem;
+  font-family: $primary-font;
+  color: $secondary-color;
+  letter-spacing: 0.2rem;
+  margin: 0.4rem 0 0.8rem 0;
+  display: block;
+}
+
 #portfolio {
   color: white;
 }
@@ -67,7 +67,7 @@
     width: 70%;
     max-width: 660px;
     border: 2px solid $secondary-color;
-    margin: 18% 25% auto 0;
+    margin: 18% 0 auto 18%;
     padding: 3rem 2rem;
     background-color: $primary-color;
     position: relative;
@@ -88,4 +88,11 @@
     position: absolute;
     content: "";
   }
+}
+
+@media screen and (min-width: 1400px) {
+	.hero-text {
+		margin: 18% 0 auto 35%;
+	}
+	
 }

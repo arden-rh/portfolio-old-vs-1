@@ -23,30 +23,3 @@
     height: 80vh;
   }
 
-  @media only screen and (min-width: 1024px) {
-    .hero-text {
-      width: 70%;
-      max-width: 660px;
-      border: 2px solid $secondary-color;
-      margin: 18% 25% auto 0;
-      padding: 3rem 2rem;
-      background-color: $primary-color;
-      position: relative;
-  
-      p {
-        padding: 0;
-      }
-    }
-  
-    .hero-text::after {
-      border: 3px dotted $secondary-color;
-      top: -32px;
-      left: 25px;
-      z-index: -1;
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      content: "";
-    }
-  }

@@ -1,3 +1,13 @@
+.contact {
+  margin: 80vh 0 10vh 0;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary-color;
+  padding-bottom: 20%;
+}
+
 .contact-header::after {
   border: 3px dotted $secondary-color;
   background-color: $primary-color;
@@ -23,27 +33,30 @@
   div {
     display: flex;
     flex-direction: column;
+		padding-top: 1.5rem;
   }
 
-  li {
-    padding: 0.4rem 0;
-    font-size: 1.1rem;
-    cursor: pointer;
+	ul {
+		padding: 0;
 
-    i {
-      padding-right: 0.6rem;
-      color: $secondary-color;
-    }
-  }
+		li {
+			padding: 0.4rem 0;
+			font-size: 1.2rem;
+			cursor: pointer;
+	
+			i {
+				padding-right: 0.6rem;
+				color: $secondary-color;
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 1024px) {
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $primary-color;
-  }
+
+	.contact {
+		margin: 80vh 0 0 0;
+	}
 
   .contact-header::after {
     border: 3px dotted $secondary-color;
@@ -60,15 +73,22 @@
 
   .contact-container {
     background-color: $primary-color-light;
+		max-width: 800px;
 
     div {
-      flex-direction: row;
-      padding: 0 2em 2em 2em;
+			justify-content: center;
+			align-items: center;
+      padding: 1.5em;
     }
 
-    ul:nth-child(2) {
-      padding-left: 100px;
-    }
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+
+			li {
+				padding: 0.6rem;
+			}
+		}
 
     li:hover {
       color: $secondary-color;
@@ -87,4 +107,11 @@
     position: absolute;
     content: "";
   }
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.contact {
+		margin: 70vh 0 0 0;
+	}
 }

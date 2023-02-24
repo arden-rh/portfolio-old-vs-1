@@ -104,15 +104,21 @@ li {
     font-size: 1rem;
     width: 20%;
     border: 2px solid $secondary-color;
-    margin: 0 50% auto 0;
+    margin: 0 50% 5% 0;
     background-color: $primary-color;
   }
 
   .section-container {
     position: relative;
     width: 90%;
-    margin: 6% 9% 10% 7%;
+    margin: 4% 9% 10% 7%;
     border: 2px solid $secondary-color;
     padding: 0;
   }
+}
+
+@media only screen and (min-width: 1400px) {
+	.section-header {
+		margin: 0 50% 2% 0;
+	}
 }
