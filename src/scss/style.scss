@@ -94,6 +94,13 @@ li {
   display: inline-block;
 }
 
+@media only screen and (min-width: 768px) {
+	.section {
+    padding: 0 5% 10% 5%;
+  }
+
+ }
+
 @media only screen and (min-width: 1024px) {
   .section {
     padding: 0 5%;

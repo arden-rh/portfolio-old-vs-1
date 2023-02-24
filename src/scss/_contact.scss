@@ -52,10 +52,35 @@
 	}
 }
 
+@media only screen and (min-width: 768px) {
+
+	.contact-container {
+
+		padding: 5%;
+
+    div {
+			justify-content: center;
+			align-items: center;
+      padding: 1.2em;
+    }
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			li {
+				padding: 0.6rem;
+			}
+		}
+  }
+
+}
+
 @media only screen and (min-width: 1024px) {
 
 	.contact {
-		margin: 80vh 0 0 0;
+		margin: 85vh 0 0 0;
 	}
 
   .contact-header::after {
