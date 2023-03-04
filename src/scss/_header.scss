@@ -1,76 +1,79 @@
 .header {
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  height: 20px;
-  padding: 7% 0;
-  border-bottom: 3px dotted $secondary-color;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	height: 20px;
+	padding: 7% 0;
+	border-bottom: 3px dotted $secondary-color;
 	background-color: $primary-color;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  margin-top: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	margin-top: 0px;
 
-  div:first-child {
-    display: flex;
-    align-items: center;
-  }
+	div:first-child {
+		display: flex;
+		align-items: center;
+	}
 
-  a:hover {
-    color: $secondary-color;
-  }
+	div:last-child {
 
-  a:last-child {
-    font-size: 1.4rem;
-  }
+		a {
+			font-size: 1.4rem;
+
+			&:last-child {
+				padding-left: 0.7rem;
+			}
+		}
+	}
+
+	a:hover {
+		color: $secondary-color;
+	}
 }
 
 .logotype {
-  padding: 0 0.2rem;
-  margin: 0;
+	padding: 0 0.2rem;
+	margin: 0;
 }
 
 h1 {
-  font-family: $primary-font;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  font-size: 1rem;
+	font-family: $primary-font;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	font-size: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .header {
-    padding: 4% 0;
-  }
+	.header {
+		padding: 4% 0;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
-  .header {
-    background-color: transparent;
-    border-bottom: 0;
-    // position: relative;
-    width: 97%;
-    top: 0;
-    left: 0;
-    height: 40px;
-    padding: 1% 1.5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 0;
-    border-bottom: 3px dotted $secondary-color;
-  }
+	.header {
+		background-color: transparent;
+		width: 97%;
+		height: 40px;
+		padding: 2% 1.5%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border: 0;
+		z-index: 5;
+	}
 
-  .header-container {
-    a:last-child {
-      display: none;
-    }
-  }
+	.header-container {
+		a:last-child {
+			display: none;
+		}
+	}
 }
